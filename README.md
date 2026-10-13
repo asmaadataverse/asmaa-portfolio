@@ -2,7 +2,7 @@
 
 ## Visit the portfolio
 
-**[Open the live portfolio →](https://123asmaa123ahmed220-sketch.github.io/asmaa-portfolio/)**
+**[Open the live portfolio →](https://asmaadataverse-sketch.github.io/asmaa-portfolio/)**
 
 Explore Asmaa's background, education, training, technical skills, and data projects, or find her contact details. The portfolio runs in your browser — no downloads or setup needed.
 
