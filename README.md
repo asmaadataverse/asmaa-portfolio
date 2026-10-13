@@ -20,9 +20,9 @@ Looking for the code? Continue to the [developer documentation](#developer-docum
 
 This repository contains the website for the portfolio, including its page content, styles, interactions, and branding assets. The datasets, notebooks, Power BI files, and SQL implementations of the featured projects are not included here.
 
-**Production site:** [Asmaa's portfolio on GitHub Pages](https://123asmaa123ahmed220-sketch.github.io/asmaa-portfolio/)
+**Production site:** [Asmaa's portfolio on GitHub Pages](https://github.com/asmaadataverse)
 
-**Repository:** [asmaa-portfolio](https://github.com/123asmaa123ahmed220-sketch/asmaa-portfolio)
+**Repository:** [asmaa-portfolio](https://github.com/asmaadataverse/asmaa-portfolio)
 
 The documentation below describes the current source tree. Local changes appear on the live site only after they are committed, pushed to the configured publishing source, and successfully deployed.
 
@@ -129,7 +129,7 @@ After replacing branding assets, increment their URL query versions in `index.ht
 
 ### Publishing updates
 
-The portfolio is hosted at **[the live GitHub Pages site](https://123asmaa123ahmed220-sketch.github.io/asmaa-portfolio/)**.
+The portfolio is hosted at **[the live GitHub Pages site](https://github.com/asmaadataverse)**.
 
 Commit and push the intended changes to the repository's configured Pages publishing source, then check the deployment result on GitHub. Confirm the publishing branch/folder or workflow under **Settings → Pages** rather than assuming the current local branch is the deployment source. Once deployment succeeds, check the live URL for the updated content and assets.
 
