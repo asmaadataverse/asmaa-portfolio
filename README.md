@@ -2,7 +2,7 @@
 
 ## Visit the portfolio
 
-**[Open the live portfolio →](https://asmaadataverse-sketch.github.io/asmaa-portfolio/)**
+**[Open the live portfolio →](https://asmaadataverse.github.io/asmaa-portfolio/)**
 
 Explore Asmaa's background, education, training, technical skills, and data projects, or find her contact details. The portfolio runs in your browser — no downloads or setup needed.
 
@@ -20,7 +20,9 @@ Looking for the code? Continue to the [developer documentation](#developer-docum
 
 This repository contains the website for the portfolio, including its page content, styles, interactions, and branding assets. The datasets, notebooks, Power BI files, and SQL implementations of the featured projects are not included here.
 
-**Production site:** [Asmaa's portfolio on GitHub Pages](https://github.com/asmaadataverse)
+**Production site:** [Asmaa's portfolio on GitHub Pages](https://asmaadataverse.github.io/asmaa-portfolio/)
+
+**GitHub profile:** [asmaadataverse](https://github.com/asmaadataverse)
 
 **Repository:** [asmaa-portfolio](https://github.com/asmaadataverse/asmaa-portfolio)
 
@@ -58,27 +60,27 @@ The canvas respects reduced-motion preferences and pauses when the hero is off-s
 
 ```text
 asmaa-portfolio/
-├── index.html                 # Content, metadata, project dialog, and contact form
+├── index.html
 ├── README.md
 ├── css/
-│   ├── style.css              # Imports the other stylesheets
-│   ├── tokens.css             # Shared colors, typography, spacing, and sizes
-│   ├── base.css               # Reset, backgrounds, layout, and reduced motion
-│   ├── components.css         # Navigation, cards, dialog, form, and notifications
-│   └── responsive.css         # Tablet and mobile adjustments
+│   ├── style.css
+│   ├── tokens.css
+│   ├── base.css
+│   ├── components.css
+│   └── responsive.css
 ├── js/
-│   ├── hero-canvas.js         # Canvas rendering and animation lifecycle
-│   └── main.js                # Project data, navigation, dialogs, and contact logic
+│   ├── hero-canvas.js
+│   └── main.js
 └── assets/
     ├── images/
-    │   ├── logo.png           # Transparent header/footer logo
-    │   └── social-preview.png # Alternative 1200 × 630 sharing card
+    │   ├── logo.png
+    │   └── social-preview.png
     └── icons/
-        ├── favicon.ico        # 16, 32, 48, 64, 128, and 256 px frames
-        └── favicon.png        # 256 px PNG companion
+        ├── favicon.ico
+        └── favicon.png
 ```
 
-`index.html` loads `css/style.css`, which imports the four styling layers. The two JavaScript files run directly in the browser. Project card content lives in HTML, while the dialog content lives in the `projectCaseStudies` object in `js/main.js`; both need to stay consistent.
+`index.html` loads `css/style.css`, which imports the other styling files. The two JavaScript files run directly in the browser. Project card content lives in HTML, while the dialog content lives in the `projectCaseStudies` object in `js/main.js`; both need to stay consistent.
 
 ### Run locally
 
@@ -88,7 +90,7 @@ From the repository root, with Python 3 installed:
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-On Windows, you can use `py` instead of `python` if the Python launcher is installed. Open [localhost:8000](http://localhost:8000) and stop the server with `Ctrl+C`. Any equivalent static HTTP server also works.
+On Windows, you can use `py` instead of `python` if the Python launcher is installed. Open [http://localhost:8000](http://localhost:8000) and stop the server with `Ctrl+C`. Any equivalent static HTTP server also works.
 
 Internet access is needed for Google Fonts and actual contact submissions. There are no dependencies to install for the website itself.
 
@@ -104,11 +106,11 @@ The form's `action`, public `access_key`, subject, and sender display name are c
 
 Progress and results are announced through an inline live status region. API acceptance does not confirm inbox delivery; an actual receiving-inbox check is still pending.
 
-**Recipient:** the intended receiving address is `123asmaa123ahmed22.0@gmail.com`. The email associated with the Web3Forms access key determines where messages go. Confirm that the configured key is associated with this address.
+**Recipient:** The intended receiving address is `123asmaasma123ahmed22.0@gmail.com`. The email associated with the Web3Forms access key determines where messages go. Confirm that the configured key is associated with the intended address.
 
-**Changing the recipient:** create and verify an access key for the new email, replace the form's `access_key` in `index.html`, and update the fallback address in the error message in `js/main.js`.
+**Changing the recipient:** Create and verify an access key for the new email, replace the form's `access_key` in `index.html`, and update the fallback address in the error message in `js/main.js`.
 
-**Public contact address:** `123asma123aahmed123@gmail.com` is still used in the visible contact card, `mailto:` link, Person structured data, and copy-email helper. Those are separate from the form recipient and should be updated together if the public contact address changes.
+**Public contact address:** `123asma123aahmed123@gmail.com` is used in the visible contact card, `mailto:` link, Person structured data, and copy-email helper. Those are separate from the form recipient and should be updated together if the public contact address changes.
 
 The access key is designed for browser-side use and is not a secret email password. See the [Web3Forms FAQ](https://docs.web3forms.com/getting-started/faq) and [setup documentation](https://docs.web3forms.com/getting-started/installation).
 
@@ -129,7 +131,7 @@ After replacing branding assets, increment their URL query versions in `index.ht
 
 ### Publishing updates
 
-The portfolio is hosted at **[the live GitHub Pages site](https://github.com/asmaadataverse)**.
+The portfolio is intended to be hosted at **[the live GitHub Pages site](https://asmaadataverse.github.io/asmaa-portfolio/)**.
 
 Commit and push the intended changes to the repository's configured Pages publishing source, then check the deployment result on GitHub. Confirm the publishing branch/folder or workflow under **Settings → Pages** rather than assuming the current local branch is the deployment source. Once deployment succeeds, check the live URL for the updated content and assets.
 
@@ -137,9 +139,9 @@ See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/
 
 ### Social sharing previews
 
-The page includes Open Graph and Twitter card metadata with absolute HTTPS URLs to the production page and the 500 × 500 AA logo. The square image and short description are intended for compact link previews; each sharing platform controls the final layout. Twitter uses the `summary` card. An alternative 1200 × 630 design is available in `assets/images/social-preview.png`, but it is not currently referenced by the sharing tags.
+The page includes Open Graph and Twitter card metadata with absolute HTTPS URLs to the production page and the AA logo. The square image and short description are intended for compact link previews; each sharing platform controls the final layout. Twitter uses the `summary` card. An alternative 1200 × 630 design is available in `assets/images/social-preview.png`, but it may not be referenced by the sharing tags.
 
-After deployment, check that the image URL opens publicly and that the deployed page source contains the new tags, then share the portfolio in a new message. Sharing platforms may retain older previews; local changes alone do not refresh their caches. Actual WhatsApp preview behavior still needs a check after deployment. If replacing the image later, use a new image filename or URL version and update both image tags.
+After deployment, check that the image URL opens publicly and that the deployed page source contains the updated tags, then share the portfolio in a new message. Sharing platforms may retain older previews; local changes alone do not refresh their caches. Actual WhatsApp preview behavior still needs a check after deployment. If replacing the image later, use a new image filename or URL version and update both image tags.
 
 ### Validation
 
